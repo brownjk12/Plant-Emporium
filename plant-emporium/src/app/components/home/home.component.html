@@ -1,0 +1,11 @@
+
+<h1>Plant Emporium</h1>
+
+<div class="plant-container">
+    <div *ngFor="let plant of plantDetails">
+        <h3>{{ plant.common_name }}</h3>
+        <div class="image-container">
+            <img [src]="plant.default_image.thumbnail" [alt]="plant.default_image.Image_id" />
+        </div>
+    </div>
+</div>
